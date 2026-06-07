@@ -82,5 +82,5 @@ app.post('/chat', async (req, res) => {
 
 app.get('/', (req, res) => res.send('Seren API en ligne ✅'));
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Seren backend démarré sur le port ${PORT}`));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, '0.0.0.0', () => console.log(`Seren backend démarré sur le port ${PORT}`));
